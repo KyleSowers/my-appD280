@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-contact-home',
@@ -7,6 +7,11 @@ import { Component } from '@angular/core';
   templateUrl: './contact-home.component.html',
   styleUrl: './contact-home.component.css'
 })
-export class ContactHomeComponent {
+export class ContactHomeComponent implements OnInit{
+  isUnchanged = true;
 
+  constructor() { }
+
+  ngOnInit() {
+  }
 }
