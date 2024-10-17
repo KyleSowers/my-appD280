@@ -62,7 +62,7 @@ span.capitalize::first-letter {
   margin: 20vh auto 0 auto;
   padding: 20px 10px 10px 10px;
   transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg);
-  box-shadow: 0 0 ;
+  /*box-shadow: 0;*/
   transition: transform .4s ease, box-shadow .4s ease;
   font-family: "Cormorant Garamond", Serif;
   text-transform: uppercase;
@@ -78,6 +78,7 @@ span.capitalize::first-letter {
 .card:hover {
   cursor: pointer;
   transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg) translateZ(10px);
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, .4);
 }
 
 .card:focus {
