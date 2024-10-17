@@ -55,7 +55,7 @@ span.capitalize::first-letter {
 }
 
 .card {
-  background-color: #f4f1eb;
+  /*background-color: #f4f1eb;*/
   background-image: url("https://the-software-guild.s3.amazonaws.com/angular/v1.0-2010/images/paper-fibers.png");
   height: 200px;
   width: 350px;
@@ -64,7 +64,7 @@ span.capitalize::first-letter {
   transform: rotateX(60deg) rotateY(0deg) rotateZ(45deg);
   /*box-shadow: 0;*/
   transition: transform .4s ease, box-shadow .4s ease;
-  font-family: "Cormorant Garamond", Serif;
+  font-family: "Cormorant Garamond", serif;
   text-transform: uppercase;
   box-sizing: inherit;
   font-size: 10.5px;
@@ -146,5 +146,27 @@ p {
 
 span {
   font-size:15.75px;
+}
+
+/* Form Styling */
+form {
+  width: 40%;
+  font-family: Cormorant Garamond, serif;
+  font-weight: 600;
+  background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+  box-shadow: 0 10px 10px rgba(0, 0, 0, .4);
+  margin: 8px auto;
+}
+
+.firstNameInput {
+  margin: 0 4.2vw;
+}
+
+.lastNameInput {
+  margin: 1vw 4.5vw;
+}
+
+.phoneNumberInput {
+  margin: 0 2.2vw;
 }
 
