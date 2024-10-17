@@ -10,8 +10,15 @@ import {Component, OnInit} from '@angular/core';
 export class ContactHomeComponent implements OnInit{
   isUnchanged = true;
 
+  onCancel(event?: KeyboardEvent) {
+    const evtMsg = event ? ' Event target is ' + (event.target as HTMLElement).textContent : '';
+    alert('Canccelled.' + evtMsg);
+  }
+
   constructor() { }
 
   ngOnInit() {
   }
+
+  protected readonly oncancel = oncancel;
 }
